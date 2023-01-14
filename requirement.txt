@@ -1,3 +1,2 @@
-json
 bs4
 kafka
