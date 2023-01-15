@@ -1,6 +1,8 @@
 from kafka import KafkaConsumer
 from google.cloud import storage
-consumer = KafkaConsumer('my-topic', bootstrap_servers=['my-cluster-kafka-bootstrap:9092'], auto_offset_reset='earliest' )
+#consumer = KafkaConsumer('my-topic', bootstrap_servers=['my-cluster-kafka-bootstrap:9092'], auto_offset_reset='earliest' )
+
+consumer = KafkaConsumer('admintome-test', bootstrap_servers=['kafka-service:9092'], auto_offset_reset='earliest' )
 
 client = storage.Client()
 
