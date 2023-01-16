@@ -8,7 +8,7 @@ consumer = KafkaConsumer('my-topic', bootstrap_servers=['my-cluster-kafka-bootst
 client = storage.Client()
 
 bucket = client.bucket("soumyabucket")
-
+bucket.blob('first_dist00000.txt').upload_from_string("Hello", 'text/csv')
 i = 0
 
 for message in consumer:
