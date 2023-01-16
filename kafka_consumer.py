@@ -11,6 +11,8 @@ bucket = client.bucket("soumyabucket")
 
 
 
+
+
 i = 0
 
 for message in consumer:
