@@ -8,11 +8,6 @@ client = storage.Client()
 
 bucket = client.bucket("soumyabucket")
 
-
-
-
-
-bytes(test_string, 'utf-8')
 i = 0
 
 for message in consumer:
